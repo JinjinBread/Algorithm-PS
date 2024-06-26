@@ -38,7 +38,7 @@ public class Main {
 
         for (int i = 0; i < studentNum; i++) {
             int sum = sumSameClassNum(i);
-            if (sum > maxSum) {
+            if (sum > maxSum) { //sum이 maxSum과 같아도(즉 임시 후보여도)
                 maxSum = sum;
                 captinNumber = i; //sum이 maxSum과 같아도(즉 임시 후보여도)
             }
