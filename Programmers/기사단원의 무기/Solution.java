@@ -12,7 +12,7 @@ class Solution {
         
         for(int i = 1; i <= number; i++) {
             
-            int str = getFactorNum(i);
+            int str = getDivisorNum(i);
             if (str > limit) {
                 ironWeight += power;
                 continue;
@@ -25,14 +25,18 @@ class Solution {
         return answer;
     }
     
-    public int getFactorNum(int number) {
+    public int getDivisorNum(int number) {
         
         
-        int count = 1;
+        int count = 0;
         
-        for (int i = 1; i <= number / 2; i++) {
-            if ((number % i) == 0)
+        for (int i = 1; i * i <= number; i++) {
+            if (i * i == number) {
                 count++;
+            }
+            
+            else if ((number % i) == 0)
+                count += 2;
         }
         
         return count;
