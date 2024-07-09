@@ -1,9 +1,6 @@
-import java.util.*;
 
 class Solution {
     public int solution(String[][] board, int h, int w) {
-        int answer = 0;
-        
         //board[h][w]의 위, 아래, 좌, 우 칸 중 같은 색으로 칠해진 칸의 개수는?
         //결과는 최소 0, 최대 4
         
@@ -18,9 +15,10 @@ class Solution {
             
             if (!isValidBound(h_check, w_check, n))
                 continue;
-            
-            if (board[h][w] == board[h_check][w_check])
+
+            if (board[h][w].equals(board[h_check][w_check])) {
                 count++;
+            }
         }
         
         return count;
