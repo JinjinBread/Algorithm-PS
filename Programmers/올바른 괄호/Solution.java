@@ -3,8 +3,6 @@ import java.util.*;
 class Solution {
     
     //닫힌 괄호는 가장 가까운 열린 괄호와 상쇄됨
-
-
     boolean solution(String s) {
         ArrayDeque<Character> bracket = new ArrayDeque<>();
         
