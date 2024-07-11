@@ -3,14 +3,9 @@ package codingtest_java.solution18;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution {
-    
-    public static void main(String[] args) {
-        
-    }
+class Solution {
 
     private static boolean solution(int[] arr, int target) {
-
         Set<Integer> set = new HashSet<>();
 
         for (int i : arr) {
