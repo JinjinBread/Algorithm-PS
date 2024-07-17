@@ -15,7 +15,7 @@ class Solution {
             // 이미 등장했던 단어인 경우
             if ((word.charAt(0) != startCh) || history.contains(word)) {
                 answer[0] = (i % n) + 1; // 번호
-                answer[1] = round + 1; // 차례
+                answer[1] = (i / n) + 1; // 차례
                 return answer;
             }
             

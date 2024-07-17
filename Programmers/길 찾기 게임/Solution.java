@@ -106,8 +106,8 @@ class Solution {
             return;
         }
 
-        preorder(root.left, result);
-        preorder(root.right, result);
+        postorder(root.left, result);
+        postorder(root.right, result);
         result.add(root.number);
 
     }
