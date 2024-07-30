@@ -1,16 +1,18 @@
-import java.util.Arrays;
-import java.util.Comparator;
-
 class Solution {
     public long solution(long n) {
 
-        String[] digit = String.valueOf(n).split("");
-
-        Arrays.sort(digit, Comparator.reverseOrder());
+        int[] num = new int[10];
         
+        while(n > 0) {
+            num[(int) (n % 10)]++;
+            n /= 10;
+        }
+
         StringBuilder sb = new StringBuilder();
-        for (String strDigit : digit) {
-            sb.append(strDigit);
+        for (int i = 9; i >= 0; i--) {
+            for (int j = 0; j < num[i]; j++) {
+                sb.append(i);
+            }
         }
 
         return Long.parseLong(sb.toString());
