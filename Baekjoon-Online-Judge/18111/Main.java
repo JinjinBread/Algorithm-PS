@@ -70,7 +70,6 @@ public class Main {
                     baseTime += diff;
                     inventory -= diff;
                 }
-
             }
 
             // 인벤토리에 있는 흙이 음수면,
