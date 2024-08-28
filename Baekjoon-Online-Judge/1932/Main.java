@@ -23,7 +23,7 @@ public class Main {
 
         int[][] dp = new int[n][n];
 
-        // ¸®ÇÁ ³ëµå¸¦ dp¿¡ ÀúÀå(ÃÊ±âÈ­)
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½å¸¦ dpï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½Ê±ï¿½È­)
         for (int i = n-1; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 dp[i][j] = triangle[i][j];
